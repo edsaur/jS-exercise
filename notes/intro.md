@@ -44,6 +44,6 @@ Useful Bulit-in Methods
 - In JavaScript there are three built-in methods these are
   - alert() - is a pop-up inside the browser that "alerts" user of a certain message. You can insert a string or a number or a basic math calculation
   - prompt() - gets data from a user from an input and can be stored in a variable.
-  - console.log()
+  - console.log() - this will print something inside of the JavaScript console.
   - comment - //
   - clear()
