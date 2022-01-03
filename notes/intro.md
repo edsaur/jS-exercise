@@ -91,3 +91,20 @@ JavaScript Loops
   }
 
 - While loop can end up to an infinite loop if there is no incremation or termination.
+
+  _FOR LOOP_ - Another way of repeating code
+
+- for(init; condition; step) {
+  // run some code
+  }
+
+  Example:
+  Printing numbers in for loop
+  for (let count = 0; count < 6; count++) {
+  console.log(count);
+  }
+  Printing each character in a string with a for loop
+  let str = "hello";
+  for (let i = 0; i < str.length; i++){
+  console.log(str[i]);
+  }
