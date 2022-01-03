@@ -7,6 +7,32 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <h1>Age Identifier</h1>
+  <ul>
+    <li>If your age is less than 18: You can't enter!</li>
+    <li>If your age is 18 to 20: You can enter but cannot drink</li>
+    <li>If your age is 21 years old: Congratulations, you can now enter and drink!</li>
+    <li>If your age is 21 and above years old: You can now enter and drink!</li>
+  </ul>
+
+  <script>
+      let age = Number(prompt("What is your age?"));
+
+      if (age < 18) {
+        alert("You cannot enter the bar!");
+      } else if (age < 0) {
+        alert("ERROR! ENTER A VALID AGE")
+      } else if (age < 21) {
+        alert("You can enter, but you cannot drink yet.");
+      } else if (age === 21) {
+        alert("Happy 21st Birthday!");
+       } else if (age > 0 && Math.sqrt(age) % 1 === 0) {
+        alert("Your age is a perfect square!")
+      } else if (age % 2 !== 0) {
+        alert("Your age is odd")
+      }  else {
+        alert("You can now enter and drink. Enjoy!")
+      }
+  </script>
 </body>
 </html>
