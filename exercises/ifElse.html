@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Age Identifier</h1>
+  <ul>
+    <li>If your age is less than 18: You can't enter!</li>
+    <li>If your age is 18 to 20: You can enter but cannot drink</li>
+    <li>If your age is 21 years old: Congratulations, you can now enter and drink!</li>
+    <li>If your age is 21 and above years old: wYou can now enter and drink!</li>
+  </ul>
+  <hr>
+<h1> Simple Guessing Game</h1>
+<ul>
+  <li>Guess the Number by typing in the prompt</li>
+  <li>If too low and high, guess again</li>
+</ul>
+  <script>
+// AGE IDENTIFIER
+      // let age = Number(prompt("What is your age?"));
+
+      // if (age < 18) {
+      //   alert("You cannot enter the bar!");
+      // } else if (age < 0) {
+      //   alert("ERROR! ENTER A VALID AGE")
+      // } else if (age < 21) {
+      //   alert("You can enter, but you cannot drink yet.");
+      // } else if (age === 21) {
+      //   alert("Happy 21st Birthday!");
+      //  } else if (age > 0 && Math.sqrt(age) % 1 === 0) {
+      //   alert("Your age is a perfect square!")
+      // } else if (age % 2 !== 0) {
+      //   alert("Your age is odd")
+      // }  else {
+      //   alert("You can now enter and drink. Enjoy!")
+      // }
+// ---------------------------------------------------------
+// GUESSING GAME
+
+      let guess = Number(prompt("Guess the number!"))
+      let num = 7; 
+      if (guess < num) {
+          alert("Too low, try again");
+      } else if (guess > num) {
+        alert("Too high, try again");
+      } else {
+        alert("Just right!")
+      }
+  </script>
+</body>
+</html>
