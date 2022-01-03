@@ -47,3 +47,24 @@ Useful Bulit-in Methods
   - console.log() - this will print something inside of the JavaScript console.
   - comment - //
   - clear()
+
+CONTROL FLOWS
+Logical Expressions, Conditionals and Loops
+
+Boolean Logic (True, False, and Beyond)
+Comparison Operators - > Greater than - >= Greater than or equal to - == Equal to - === Equal value and type - != Not equals to - !== Not equal value and type
+
+Logical Operators
+
+- Chaining simple boolean statements to complex ones
+  - There are three logical operators
+    AND && (ex. if (x === 10 && y < 20))
+    OR || (ex. if (x === 10 || y < 20))
+    NOT ! (ex. if !((x === 10 && y < 20)))
+
+JS Conditionals - Making Decisions with code
+
+- If, Else If, Else
+  - “If” statements: where if a condition is true it is used to specify execution for a block of code.
+  - “Else” statements: where if the same condition is false it specifies the execution for a block of code.
+  - “Else if” statements: this specifies a new test if the first condition is false.
