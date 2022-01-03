@@ -48,6 +48,8 @@ Useful Bulit-in Methods
   - comment - //
   - clear()
 
+---
+
 CONTROL FLOWS
 Logical Expressions, Conditionals and Loops
 
@@ -64,7 +66,28 @@ Logical Operators
 
 JS Conditionals - Making Decisions with code
 
-- If, Else If, Else
-  - “If” statements: where if a condition is true it is used to specify execution for a block of code.
-  - “Else” statements: where if the same condition is false it specifies the execution for a block of code.
-  - “Else if” statements: this specifies a new test if the first condition is false.
+_If, Else If, Else_
+
+- “If” statements: where if a condition is true it is used to specify execution for a block of code.
+- “Else” statements: where if the same condition is false it specifies the execution for a block of code.
+- “Else if” statements: this specifies a new test if the first condition is false.
+
+JavaScript Loops
+
+- Loop helps us to not repeat ourselves of codes (DRY & WET)
+  _WHILE LOOP_
+- The while loop starts by evaluating the condition. If the condition is true, the statement(s) is/are executed.
+- Example Code
+- while(someCondition) {
+  // run some code
+  }
+- You can also print each character in a string
+  let str = "hello"
+  let count = 0;
+
+  while(count < str.length) {
+  console.log(str[count]);
+  count++
+  }
+
+- While loop can end up to an infinite loop if there is no incremation or termination.
