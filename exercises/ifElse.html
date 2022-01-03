@@ -19,22 +19,32 @@
 <h1> Simple Guessing Game</h1>
 
   <script>
-      let age = Number(prompt("What is your age?"));
+      // let age = Number(prompt("What is your age?"));
 
-      if (age < 18) {
-        alert("You cannot enter the bar!");
-      } else if (age < 0) {
-        alert("ERROR! ENTER A VALID AGE")
-      } else if (age < 21) {
-        alert("You can enter, but you cannot drink yet.");
-      } else if (age === 21) {
-        alert("Happy 21st Birthday!");
-       } else if (age > 0 && Math.sqrt(age) % 1 === 0) {
-        alert("Your age is a perfect square!")
-      } else if (age % 2 !== 0) {
-        alert("Your age is odd")
-      }  else {
-        alert("You can now enter and drink. Enjoy!")
+      // if (age < 18) {
+      //   alert("You cannot enter the bar!");
+      // } else if (age < 0) {
+      //   alert("ERROR! ENTER A VALID AGE")
+      // } else if (age < 21) {
+      //   alert("You can enter, but you cannot drink yet.");
+      // } else if (age === 21) {
+      //   alert("Happy 21st Birthday!");
+      //  } else if (age > 0 && Math.sqrt(age) % 1 === 0) {
+      //   alert("Your age is a perfect square!")
+      // } else if (age % 2 !== 0) {
+      //   alert("Your age is odd")
+      // }  else {
+      //   alert("You can now enter and drink. Enjoy!")
+      // }
+
+      let guess = Number(prompt("Guess the number!"))
+      let num = 7; 
+      if (guess < num) {
+          alert("Too low, try again");
+      } else if (guess > num) {
+        alert("Too high, try again");
+      } else {
+        alert("Just right!")
       }
   </script>
 </body>
