@@ -1,1 +1,1 @@
-# https://edsaur.github.io/jS-exercise/
+# https://edsaur.github.io/jS-exercise/index.html
