@@ -7,6 +7,38 @@
   <title>Function</title>
 </head>
 <body>
-  
+  <h1>Functions Problem Sets</h1>
+  <ul>
+    <li>isEven() - Write a function isEven() which takes a single numeric argument and returns true if the number is even, and false otherwise</li>
+    <li>factorial() - write a function factorial() which takes a single numeric argument and returns the factorial of that number</li>
+  </ul>
+
+  <script type="text/javascript">
+    function isEven(num) {
+      // if(num % 2 === 0) {
+      //   return true;
+      // } else {
+      //   return false;
+      // }
+
+      return num % 2 === 0;
+    }
+
+
+    function factorial(fac) {
+        if (fac < 0 ) {
+          return -1;
+        } else if (fac == 0) {
+          return 1; 
+        } else {
+          return (fac * factorial(fac - 1))
+        }
+    }
+
+    function kebabToSnake(str) {
+      let myStr = str.replace(/-/g, "_");
+      return myStr;
+    }
+  </script>
 </body>
 </html>
