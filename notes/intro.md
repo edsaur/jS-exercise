@@ -108,3 +108,50 @@ JavaScript Loops
   for (let i = 0; i < str.length; i++){
   console.log(str[i]);
   }
+
+---
+
+JAVASCRIPT Functions (REUSABLE BLOCKS OF CODES)
+
+- Function can store any amount of codes, and it can be run all over again.
+  They are reusable codes.
+- We can also recall functions.
+
+Javascript Function Arguments
+
+- Arguments are Functions that has inputs
+  example: function square(num) {
+  console.log(num \* num);
+  }
+
+- We can use the argument temporarily to store the data
+- Functions can have as many arguments as needed.
+  example: function area(length, width) {
+  console.log(length \* width);
+  }
+
+  area(9,2); //18
+
+RETURN Keyword
+
+- Often we want a function to send back an output value
+- We can replace console.log to Return so that it can return the value that came from the function
+- We can use the return keyword to output a value from a function.
+
+- There is a function that we can captialize the first char in a string:
+  function captialize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  var city = "paris"
+  var captial = capitalize(city);
+
+- Return keyword can also stop execution of a function
+  So the whole point of a function is that it takes some sort of input and then it returns something.
+  as soon as it returns that's just the end of the function's execution.
+
+Function Declaration
+
+- It is the complete declaration of a function
+  Function Expression
+- Function that is inside of a variable, that is temporary.
