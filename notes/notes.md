@@ -155,3 +155,9 @@ Function Declaration
 - It is the complete declaration of a function
   Function Expression
 - Function that is inside of a variable, that is temporary.
+
+JavaScript Scope
+
+- Scope is the context that code is executed in.
+- Which variable that is visible in one function and could be different in another function.
+- In the nested function there might be scoped varialbes.
