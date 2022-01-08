@@ -1,7 +1,10 @@
+// NUMBER RANDOMIZER 
+let randomLoc1 = Math.floor(Math.random() * 5)
 // DECLARE 3 VAR FOR LOCATION
-let loc1 = 3;
-let loc2 = 4;
-let loc3 = 5;
+let loc1 = randomLoc1;
+let loc2 = loc1 + 1;
+let loc3 = loc2 + 1;
+
 // DECLARE A VAR TO HOLD USERS GUESS, SET TO 0.
 let guess;
 // DECLARE A VAR THAT HAS NUMBER OF HITS, SET TO 0
@@ -26,7 +29,7 @@ let isSunk = false;
               else {   // ELSE
                 guesses = guesses + 1; // ADD ONE MORE GUESS
             
-                if(guess == loc1 || guess == loc2 || guess == loc3) {
+                if(guess === loc1 || guess === loc2 || guess === loc3) {
                   hits = hits + 1; // IF THE USER'S GUESS MATCHES A LOCATION
                   alert("HIT!") // ADD ONE TO GUESSES
                 }
