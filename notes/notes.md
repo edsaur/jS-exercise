@@ -117,20 +117,30 @@ JAVASCRIPT Functions (REUSABLE BLOCKS OF CODES)
   They are reusable codes.
 - We can also recall functions.
 
+Parameters
+
+- Parameters are assigned values when the function is called.
+- Parameters are like and works like variables within the function.
+
 Javascript Function Arguments
 
 - Arguments are Functions that has inputs
   example: function square(num) {
   console.log(num \* num);
   }
+  square(3) <- This is an example of an argument.
 
 - We can use the argument temporarily to store the data
-- Functions can have as many arguments as needed.
+- Functions can have as many arguments as needed, depending on how many parameters are there in the function declaration.
+- Arguments are the ones that are passed to invoke or call the function to run.
+- When calling functions, we pass arguments to the parameter names.
+- You can use expressions as an argument (saveMyProfile(student, year, 381/100, status == "newuser"));
+
   example: function area(length, width) {
   console.log(length \* width);
   }
 
-  area(9,2); //18
+  area(9,2); // 18 <- This is an example of an argument.
 
 RETURN Keyword
 
@@ -161,3 +171,58 @@ JavaScript Scope
 - Scope is the context that code is executed in.
 - Which variable that is visible in one function and could be different in another function.
 - In the nested function there might be scoped varialbes.
+
+Higher Order Functions
+
+- Function can be inside of another function.
+
+---
+
+JAVASCRIPT ARRAYS
+
+- ARRAY LET US GROUP DATA TOGETHER IN LISTS
+  - THEY ARE INDEXED STARTING AT 0. EVERY SLOT HAS A CORRESPONDING NUMBER.
+  - THEY ARE LIKE LIST LIKE OBJECT PROTOTYPE THAT HAS METHODS.
+- In creating arrays you need to make use of the bracket notation
+  ex. let fruits = ['Apples', 'Banana']
+  console.log(fruits.length);
+
+- You can access an Array item using the index position.
+  let first = fruits[0] // Apple
+  let last = fruits[fruits.length - 1]; // Banana
+
+- You can also loop over an Array
+  fruits.forEach(function(item, index, array) {
+  console.log(item, index);
+  })
+
+- Or we can also add an item to the end of an Array
+  let newLength = fruits.push('Orange');
+
+- Or we can also remove an item from the end of an Array.
+  let last = fruits.pop() // removes orange (from the end)
+
+- We can also remove an item from the beginning of an Array
+  let first = fruits.shift() // removes Apple from the front.
+
+- Or add an item from the beginning of an Array
+  let first = fruits.unshift('Strawberry') // prints out Strawberry in the beginning of the array
+
+- To find the index of an Array
+  let pos = fruits.indexOf('Banana'); // 1
+
+- We can also remove an item by index position
+  let removedItem = fruits.splice(pos, 1) // removes banana
+
+Accessing array elements
+
+- Arrays are zero-indexed. Array element starts at index of 0 and the last element is at the index value of zero and the last element is at the index value equal to the value of the array's length property minus 1.
+  let arr ['this is a first string', 'this is a second string', 'this is the last element'];
+  console.log(arr[0])
+  console.log(arr[1]);
+  console.log(arr[arr.length - 1])
+
+- Javascript properties that begin with a digit cannot be referenced with dot notation and must be accessed using bracket notation.
+  let years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
+  console.log(years.0) // a syntax error
+  console.log(years[0]) // works properly
