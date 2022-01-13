@@ -226,3 +226,18 @@ Accessing array elements
   let years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
   console.log(years.0) // a syntax error
   console.log(years[0]) // works properly
+
+Array Iteration
+
+- To loop over an array using a for loop, we need to make use of the array's length property.
+  ex. let colors = ["red", "orange", "yellow", "green"];
+  for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i])
+  }
+
+- ForEach provides an easy built-in way of iterating over an array.
+  arr.forEach(someFunction);
+  example: let colors = ["red", "orange", "yellow", "green"];
+  colors.forEach(function(color){
+  console.log(color);
+  })
