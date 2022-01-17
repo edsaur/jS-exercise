@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+// You can iterate through an array by using For Loop 
+    // make an array of name of colors.
+    let colors = ["blue", "red", "orange", "yellow", "green", "violet"] 
+    // LOOP array of colors
+    for(let i = 0; i < colors.length; i++) {
+    // return all the colors  
+        console.log(colors[i])
+  }
+
+  console.log("---------------------------------");
+// Or there is an easier way to iterate arrays is by using forEach method
+// make an array of name of colors..
+  let newColors = ["blue", "red", "orange", "yellow", "green", "violet"];
+
+
+newColors.forEach(function(color) { // LOOP through the array of colors.
+  console.log(color); // return the value of colors.
+})   
+  </script>
+</body>
+</html>
