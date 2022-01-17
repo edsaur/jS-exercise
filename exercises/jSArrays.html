@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Arrays</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <ul>
+    <li>"new" - Add a Todo</li>
+    <li>"list" - View All Todos</li>
+    <li>"quit" - Quit App</li>
+  </ul>
+
+  <script>
+    let todos = [];
+    let input = prompt("What would you like to do?");
+
+    while(input !== "quit") {
+      if(input === "list") {
+      listTodo();
+    } else if (input === "new") {
+      addTodo();
+    } else if (input === "delete") {
+      deleteTodo()
+    }
+
+    input = prompt("What would you like to do?");
+    } 
+
+    console.log("OK, YOU QUIT THE APP");
+
+    function listTodo() {
+      console.log("*************")
+      todos.forEach(function(todo, i){
+        console.log(i + ": " + todo);
+      })
+      console.log("*************")
+    }
+
+
+    function addTodo() {
+      let newTodo = prompt("Enter new todo");
+      todos.push(newTodo);
+      console.log( newTodo + " is added to-do")
+    }
+
+    function deleteTodo() {
+      let index = prompt("Enter index of todo to delete");
+        todos.splice(index, 1);
+        console.log("Todo deleted");
+    }
+  </script>
+</body>
+</html>
