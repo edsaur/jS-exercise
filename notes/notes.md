@@ -232,7 +232,7 @@ Array Iteration
 - To loop over an array using a for loop, we need to make use of the array's length property.
   ex. let colors = ["red", "orange", "yellow", "green"];
   for (let i = 0; i < colors.length; i++) {
-  console.log(colors[i])
+  console.log(colors[i]);
   }
 
 - ForEach provides an easy built-in way of iterating over an array.
@@ -241,3 +241,7 @@ Array Iteration
   colors.forEach(function(color){
   console.log(color);
   })
+
+---
+
+JavaScript Objects

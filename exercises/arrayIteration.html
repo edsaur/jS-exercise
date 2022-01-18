@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+// You can iterate through an array by using For Loop 
+    // make an array of name of colors.
+    let colors = ["blue", "red", "orange", "yellow", "green", "violet"] 
+    // LOOP array of colors
+    for(let i = 0; i < colors.length; i++) {
+    // return all the colors  
+        console.log(colors[i])
+  }
+
+  console.log("---------------------------------");
+// Or there is an easier way to iterate arrays is by using forEach method
+// make an array of name of colors..
+  let newColors = ["blue", "red", "orange", "yellow", "green", "violet"];
+
+
+newColors.forEach(function(color) { // LOOP through the array of colors.
+  console.log(color); // return the value of colors.
+})   
+
+// EXERCISES
+// printReverse() - writing that takes an array as an argument and prints out the elements in the array in reverse order (don't actually reverse the array itself.)
+
+function printReverse(str) {  // FUNCTION to print an array
+let newStr = [];
+for (let i = str.length - 1; i >= 0; i--) {  // Loop the function backwards
+  newStr.push(str[i]); // return array that is reversed.
+}
+return newStr;
+}
+
+/* isUniform - write the function which takes an array as an argument and returns true if all elements 
+in the araay are identical. */
+function isUniform(arr) { // write a function that will recieve the array
+ for (let i = 1; i < arr.length; i++) { // LOOP the array around...
+   if (arr[i] !== arr[0]) { // If an array value is not equal to the other values 
+     return false; // return false
+   } 
+ }
+ return true;
+}
+
+/* sumArray() - write an array that accepts an array of numbers and 
+returns the sum of all numbers in the array*/
+
+function sumArray(num) {// write a FUNCTION sumArray() with a parameter of num
+let result = 0; // write a variable named result with a value of 0
+  for (let i = 0; i < num.length; i++) {
+       result += num[i];
+  }// LOOP around the program to add each value in the array
+  // return num with the added array
+  return result;
+}
+
+/* max() - accepts an array of numbers and returns the maximum number in an array */
+ function max(num) { // write a function max() that recieves a parameter of num.
+  let maxNum = 10; // write a variable that has the maximum number inside of the array
+    for (let i = 0; i <= num.length; i++) {// LOOP around the program
+        if (maxNum === num[i]) {  // IF maximum number is equal to the maximum number in the Array
+         return "The largest number in the array is" + " " + maxNum; // return the max number;
+        } 
+    }
+    return "The numbers given does not have the highest number written in the maxNum, try again"
+ }
+  </script>
+</body>
+</html>
