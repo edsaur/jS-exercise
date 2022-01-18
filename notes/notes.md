@@ -241,3 +241,7 @@ Array Iteration
   colors.forEach(function(color){
   console.log(color);
   })
+
+---
+
+JavaScript Objects
