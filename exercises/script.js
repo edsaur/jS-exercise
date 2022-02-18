@@ -24,9 +24,9 @@ let movies = [{
 
 for (let i = 0; movies.length > i; i++) {
     if(movies[i].hasWatched === true) {
-      console.log("You have watched " + '"' + movies[i].title + '"' + " - " + movies[i].rating + " stars")
+      document.write("<h1> You have watched " + '"' + movies[i].title + '"' + " - " + movies[i].rating + " stars" + "<br> </h1>")
     } else {
-      console.log("You have not seen " + '"' + movies[i].title + '"' + " - " + movies[i].rating + " stars")
+      document.write("<h2> You have not seen " + '"' + movies[i].title + '"' + " - " + movies[i].rating + " stars" + "<br> </h2>")
     }
 }
 
