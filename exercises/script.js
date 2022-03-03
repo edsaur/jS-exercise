@@ -1,4 +1,5 @@
-let movies = [{
+let movies = [
+  {
     title: "Spider-Man: No Way Home",
     rating: 3.5,
     hasWatched: true
@@ -29,10 +30,17 @@ let movies = [{
   }
 ];
 
+const printWatched = document.querySelector(".moviesWatched");
+const printNotWatched = document.querySelector(".moviesNotWatched");
+let moviesWatched = '';
+let moviesNotWatched  = '';
+
 for (let i = 0; movies.length > i; i++) {
-  if (movies[i].hasWatched === true) {
-    document.write("<p> You have watched " + '"' + movies[i].title + '"' + " - " + movies[i].rating + " stars <br> </p>");
+  if (movies[i].hasWatched) {
+    moviesWatched += `<p> You have watched ${movies[i].title} -  ${movies[i].rating} stars. </p>`;
   } else {
-    document.write("<p>You have not seen " + '"' + movies[i].title + '"' + " - " + movies[i].rating + " stars <br> </p>");
+    moviesNotWatched += `<p> You have not seen ${movies[i].title} - ${ movies[i].rating} stars </p>`;
   }
 }
+printWatched.innerHTML = moviesWatched;
+printNotWatched.innerHTML = moviesNotWatched;
