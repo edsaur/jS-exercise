@@ -23,7 +23,13 @@ function setUpModeButtons() {
 			modeButtons[1].classList.remove("selected");
 	
 			this.classList.add("selected");
-			this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
+			if (this.textContent === "Easy") {
+				numSquares = 3;
+			} else if (this.textContent === "Hard") {
+				numSquares = 6;
+			} else {
+				numSquares = 12;
+			}
 			reset();
 		});
 }
