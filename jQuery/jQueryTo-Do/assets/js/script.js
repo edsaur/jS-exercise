@@ -45,6 +45,7 @@ $(document).ready(function(){
  // hide "TO-DO LIST" text and slide-down by "ADD NEW TO-DO"
   // Pressing "ADD NEW TO-DO"
   $("#addnewTodo").on("click", function() {
-    $("input[type='text']").fadeToggle(1000);
+    $("input[type='text']").fadeToggle(500);
+    $("#add").fadeToggle(500);
   })
 })
